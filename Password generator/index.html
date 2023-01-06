@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 style="text-align: center; padding-top:3%;">GET THE PASSWORD</h1>
+        <div class="password" id="password"></div>
+        <button class="copy" id="copy">COPY</button>
+        <h1 style="text-align: center; padding-top:3%;">Customize Your Password</h1>
+        <p style=" padding-top:3%;  font-size: 19px;">Choose the format</p>
+        <div class="format">
+            <div class="section">
+
+                <input type="checkbox" name="uppercase" id="uppercase" >
+                <label for="">Upper Case</label>
+            </div>
+            <div class="section">
+                <input type="checkbox" name="lowercase" id="lowercase" >
+                <label for="">Lower Case</label>
+            </div>
+            <div class="section">
+                <input type="checkbox" name="uppercase" id="numeric" >
+                <label for="">Numeric</label>
+            </div>
+            <div class="section">
+                <input type="checkbox" name="uppercase" id="symbols" >
+                <label for="">Symbols</label>
+            </div>
+            <div class="length">
+                <label for="">Enter the length of your Password</label>
+                <input style="margin-top: 3%; border: 1px solid black; padding-left: 1%; padding-top: 1%;padding-bottom: 1%;" type="number" name="" id="passwordlength">
+            </div>
+            <div class="btn-container">
+                <button id="btn" class="generate">GENERATE</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="./index.js"></script>
+</html>
